@@ -1,131 +1,225 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <!-- Required meta tags --> 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-              <title>Rocket Dollar</title>
-<!-- 
-          <meta content="Check out Rocket Dollar! A 401k investment platform for alternative investments " property="og:title">
-          <meta content="Rocket Dollar does X " property="og:description">
-          <meta content='' property='og:image'>
-          <meta content="Invest in x using your 401K" name="description">
-                      <meta name="twitter:card" content="summary_large_image">
-            <meta name="twitter:site" content="@Rocket_Dollar">
-            <meta name="twitter:title" content="Check out Rocket Dollar!">
-            <meta name="twitter:description" content="Rocket Dollar does X">
-            <meta name="twitter:image" content="">
-           -->
-          <meta content="website" property="og:type">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-          <!-- Favicon -->
-          <link rel='icon' type='image/png' href=''>
-          <!-- Font Awesome -->
-          <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-          
-          <style>
-              .bg-gradient-main{
-                  background: linear-gradient(to bottom right, #FFB827, #E20074);
-                  background-attachment: fixed;
-              }
-              .wht{
-                  color: #fff;
-              }
-              .nav-top{
-                  color: #fff;
-              }
-              .nav-top:hover {
-                  color: #E20074;
-              }
-              #page-wrapper {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    min-height: 85vh;
-                    align-content: space-between;
-                    flex-direction: row;
-                    flex-wrap: wrap;
-              }
-              .box-shadow{
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <title>Rocket Dollar</title>
+<!-- 
+        <meta content="Check out Rocket Dollar! A 401k investment platform for alternative investments " property="og:title">
+        <meta content="Rocket Dollar does X " property="og:description">
+        <meta content='' property='og:image'>
+        <meta content="Invest in x using your 401K" name="description">
+                    <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@Rocket_Dollar">
+        <meta name="twitter:title" content="Check out Rocket Dollar!">
+        <meta name="twitter:description" content="Rocket Dollar does X">
+        <meta name="twitter:image" content="">
+        -->
+        <meta content="website" property="og:type">
+
+        <!-- Favicon -->
+        <link rel="icon" href= "img/rd-logo-favicon.png" type='image/png'>
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:300,400,700,800" rel="stylesheet">
+        <!-- Font Awesome -->
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        
+        <style>
+            /* general */
+            .wht{
+                color: #fff;
+            }
+            /* body */
+            body {
+            font-family: 'Montserrat', sans-serif;
+                font-weight: 400;
+            }
+            .content {
+                z-index: 2;
+            }
+            .bg-gradient-main{
+                background: linear-gradient(to bottom right, #a32ad6, #350dff );
+                background-attachment: fixed;
+                opacity: 1;
+                position: absolute;
+                top: 0;
+                height: 105%;
+                z-index: -1;
+            }
+            .bg-img {
+                background-image: url("img/astro-3.jpg");
+                /* background-image: url("img/AdobeStock_139734558_Preview.jpeg"); */
+                /* background-image: url("img/AdobeStock_50806757_Preview.jpeg"); */
+                background-size: cover;
+                background-repeat: no-repeat;
+                opacity: .5;
+                position: absolute;
+                top: 0;
+                height: 105%;
+                z-index: -1;
+            }
+            #page-wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 80vh;
+                align-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+                z-index: 1;
+            }
+            /* top nav */
+            .nav-top{
+                color: #fff;
+                font-size: 1.5rem;
+            }
+            .nav-top:hover {
+                color: #320047;
+            }
+            #logo{
+                height: 60px;
+                width: 300px;
+                background-image: url("img/rd-logo-long-wht.png");
+                background-repeat: no-repeat;
+            }
+            /* form */
+            .purp-gradient{
+                background: linear-gradient(to bottom right, #a32ad6, #350dff);
+                opacity: .9;
+                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4),0 2px 20px 0 rgba(0,0,0,0.4)!important;
+            }
+            /* .box-shadow{
                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),0 2px 20px 0 rgba(0,0,0,0.2)!important;
-              }
-              .bg-purple {
-                background-color: #8500EF; 
-              }
-              .bg-purple:hover{
-                background-color: #6700bb; 
-              }
-              .nav-btm:hover{
-                color: #FFB827;
-              }
-              /* responsive md sizes and down */
-              @media (max-width: 991.98px) {
-                .mt-80 {
-                    margin-top: 80px;
-                }
-                .display-4 {
-                    font-size: 2.5rem;
-                }
-               }
-               /* responsive sm sizes and down */
-               @media (max-width: 767.98px) {
-                .navbar-btm {
-                    font-size: .8rem;
-                }
-                .fixed-top{
-                    background-color: #fff;
-                }
-                .nav-top{
-                   color: #E20074;
-                   font-size: 1.5rem;
-                }
-                .nav-top:hover{
-                    color:#6700bb;
-                }
-               }
-          </style>
-      </head>
-      <body class="bg-gradient-main wht">
-        <!-- nav -->
-            <nav class="navbar fixed-top">
-                <div class="container">
-                        <a class="navbar-brand wht" href="#brand">
-                            <img src="logo" width="30" height="30" class="d-inline-block align-top" alt="">
+            } */
+            .bg-purple {
+                background: linear-gradient(to bottom, #FFB200, #FA5C34);
+                border: none;
+                height: 45px;
+            }
+            .bg-purple:hover{
+                background: linear-gradient(to bottom,#22DDE0, #350DFF);
+                background-color: #320047; 
+            }
+
+            /* btm nav */
+            .nav-btm:hover{
+                color: #320047;
+            }
+
+            /* responsive md sizes and down */
+            @media (max-width: 991.98px) {
+            .mt-60 {
+                margin-top: 60px;
+            }
+            .display-4 {
+                font-size: 2.5rem;
+            }
+            .navbar-btm {
+                font-size: 1rem;
+                text-align: right;
+            }
+            }
+
+            /* responsive sm sizes and down */
+            @media (max-width: 767.98px) {
+            .bg-img {
+                background-image: url("img/astro-2.jpg");
+            }
+            #logo{
+                height: 60px;
+                width: 250px;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+            .navbar-btm {
+                text-align: center;
+                font-size: .7rem;
+            }
+            }
+            /* responsive xs sizes and down */
+            @media (max-width: 575.98px) { 
+            .bg-img {
+                background-image: url("img/astro-1.jpg");
+            }
+            #page-wrapper{
+                min-height: 70vh;
+            }
+            .h-sm-100{
+                height: 900px;
+            }
+            .navbar-brand{
+                display: flex;
+                justify-content: center;
+            }
+            .nav-top{
+                color: #B400FF;
+                font-size: 1.5 rem;
+            }
+            .nav-top:hover{
+                color:#6C2799;
+            }
+            .navbar ul{
+                margin: 0 auto;
+            }
+            .navbar-btm {
+                display: none;
+            }
+            .fixed-top{
+                background-color: #fff;
+                position: fixed;
+                top: auto;
+                bottom: 0;
+                right: 0;
+                left: 0;
+                z-index: 1000;
+            }
+            }
+        </style>
+    </head>
+    <body class = "wht">
+        <div class = "bg-gradient-main w-100 h-sm-100"></div>
+        <div class = "bg-img w-100 h-sm-100"> </div>
+        <div class="container">
+            <a class="navbar-brand" href="#brand">
+                <div id="logo"></div>
+            </a>
+            <nav class="navbar fixed-top container justify-content-end">
+                <ul class="nav row">
+                    <li class="nav-item col p-0"></li>
+                        <a class="nav-link nav-top" href="#instagram">
+                            <i class="fab fa-instagram fa-lg"></i>
                         </a>
-                    <div class="collapse navbar-collapse" id="navbarNav"></div>
-                        <ul class="nav justify-content-end row">
-                            <li class="nav-item col p-0"></li>
-                                <a class="nav-link nav-top" href="#facebook">
-                                    <i class="fab fa-facebook-square fa-lg"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item col p-0"></li>
-                                <a class="nav-link nav-top" href="#twitter">
-                                    <i class="fab fa-twitter-square fa-lg"></i>
-                                </a>
-                            </li>
-                            <li class="nav-item col p-0"></li>
-                                <a class="nav-link nav-top" href="#linkedin">
-                                    <i class="fab fa-linkedin fa-lg"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                    </li>
+                    <li class="nav-item col p-0"></li>
+                        <a class="nav-link nav-top" href="#facebook">
+                            <i class="fab fa-facebook-square fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item col p-0"></li>
+                        <a class="nav-link nav-top" href="#twitter">
+                            <i class="fab fa-twitter-square fa-lg"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item col p-0"></li>
+                        <a class="nav-link nav-top" href="#linkedin">
+                            <i class="fab fa-linkedin fa-lg"></i>
+                        </a>
+                    </li>
+                </ul>
             </nav>
-        <!-- end nav -->
-        <!-- hero -->
+        </div>
+        <div class = "content">
             <div  id="page-wrapper" class="container text-center">
                 <div class="row">
-                <!-- hero copy -->
                     <div class="col-12 col-md-6 mt-80 mt-lg-3">
                         <h1 class="mt-4 mt-lg-3 display-4">Easy Access to Retirement Dollars</h1>
-                        <ul class="mt-sm-4 ml-lg-5 mt-5 ml-4 list-unstyled">
+                        <ul class="mt-sm-4 ml-lg-5 mt-3 ml-4 mb-5 list-unstyled">
                             <ul>
                                 <li class="lead text-left">Unlock retirement savings</li>
                                 <li class="lead text-left">Access to new investments like start-ups and cryptocurrency</li>
@@ -133,25 +227,23 @@
                             </ul>
                         </ul>
                     </div>
-                <!-- end hero copy -->
-                <!-- form -->
                     <div class="col">
                         <div class="card w-75 mx-auto mt-80 mt-lg-3">
-                            <div class="card-body bg-gradient-main rounded box-shadow">
+                            <div class="purp-gradient card-body rounded box-shadow">
                                 <form accept-charset="UTF-8" action="https://va406.infusionsoft.com/app/form/process/1d2b003c167ede54ffe54f6c537f1195" class="infusion-form" id="inf_form_1d2b003c167ede54ffe54f6c537f1195" method="POST">
                                     <input name="inf_form_xid" type="hidden" value="1d2b003c167ede54ffe54f6c537f1195" />
                                     <input name="inf_form_name" type="hidden" value="Website Contact~br~Prospect Form" />
                                     <input name="infusionsoft_version" type="hidden" value="1.69.0.37" />
                                     <div class="form-group mx-auto mt-2 infusion-field">
-                                        <input type="text" class="form-control mb-3 infusion-field-input" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon2">
-                                        <input type="text" class="form-control mb-3 infusion-field-input" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon2">
-                                        <input type="email" class="form-control mb-3 infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2">
+                                        <input type="text" class="form-control mb-3 infusion-field-input" id="inf_field_FirstName" name="inf_field_FirstName" placeholder="First Name" aria-label="First Name" aria-describedby="basic-addon2" required>
+                                        <input type="text" class="form-control mb-3 infusion-field-input" id="inf_field_LastName" name="inf_field_LastName" placeholder="Last Name" aria-label="Last Name" aria-describedby="basic-addon2" required>
+                                        <input type="email" class="form-control mb-3 infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" required>
                                         <div class="infusion-field">
                                             <label class="d-block text-left" for="inf_option_Goal">Your Goal</label>
                                             <div class="infusion-radio">
                                                 <div class="options-container row">
                                                     <div class="form-check infusion-option col">
-                                                        <input class="form-check-input" id="inf_option_Goal_216" name="inf_option_Goal" type="radio" value="216">
+                                                        <input class="form-check-input" id="inf_option_Goal_216" name="inf_option_Goal" type="radio" value="216" required>
                                                         <label class="form-check-label" for="inf_option_Goal_216">Investing</label>
                                                     </div>
                                                     <div class="form-check infusion-option col">
@@ -169,30 +261,28 @@
                             </div>
                         </div>
                     </div>
-                <!-- end form -->
                 </div>
             </div>
-        <!-- end hero -->
-        <!-- btm nav -->
             <nav class="navbar navbar-btm navbar-expand-lg container pt-5">
                     <div class="row w-100 align-items-center">
-                    <div class="col">©2018 Copyright Rocket Dollar</div>
-                    <div class="d-inline-block text-right d-lg-flex navbar-nav col justify-content-end">
+                    <div class="col-sm-6 col-12">©2018 Copyright Rocket Dollar</div>
+                    <div class="d-inline-block d-lg-flex navbar-nav col-12 col-sm-6 justify-content-end">
+                        <a class="d-inline-block nav-item nav-link nav-btm wht" href="#"> Instagram |</a>
                         <a class="d-inline-block nav-item nav-link nav-btm wht" href="#"> Facebook |</a>
                         <a class="d-inline-block nav-item nav-link nav-btm wht" href="#"> Twitter |</a>
                         <a class="d-inline-block nav-item nav-link nav-btm wht" href="#"> Linkedin </a>
                     </div>
                     </div>
                 </nav>
-        <!-- end btm nav -->
-        <!-- Optional JavaScript -->
-        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <script type="text/javascript" src="https://va406.infusionsoft.com/app/webTracking/getTrackingCode"></script>
-        <script type="text/javascript" src="https://va406.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.69.0.37-hf-201801311540"></script>
-        <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
-        <script type="text/javascript" src="https://va406.infusionsoft.com/app/timezone/timezoneInputJs?xid=1d2b003c167ede54ffe54f6c537f1195"></script>
-      </body>
-    </html>
+        </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://va406.infusionsoft.com/app/webTracking/getTrackingCode"></script>
+    <script type="text/javascript" src="https://va406.infusionsoft.com/resources/external/recaptcha/production/recaptcha.js?b=1.69.0.37-hf-201801311540"></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
+    <script type="text/javascript" src="https://va406.infusionsoft.com/app/timezone/timezoneInputJs?xid=1d2b003c167ede54ffe54f6c537f1195"></script>
+    </body>
+</html>
