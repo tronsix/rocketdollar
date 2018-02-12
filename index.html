@@ -35,10 +35,21 @@
             .wht{
                 color: #fff;
             }
+            h1{
+                font-family: 'Open Sans', sans-serif;
+            }
+            #benefits{
+                max-width: 450px;
+            }
+            .display-4{
+                font-weight: 400;
+            }
+            ul{
+                padding: 0;
+            }
             /* body */
             body {
-            font-family: 'Montserrat', sans-serif;
-                font-weight: 400;
+             font-family: 'Montserrat', sans-serif;
             }
             .content {
                 z-index: 2;
@@ -85,8 +96,11 @@
             #logo{
                 height: 60px;
                 width: 300px;
+                background-size: cover;
                 background-image: url("img/rd-logo-long-wht.png");
                 background-repeat: no-repeat;
+                position: fixed;
+                top: 0px;
             }
             /* form */
             .purp-gradient{
@@ -94,9 +108,6 @@
                 opacity: .9;
                 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4),0 2px 20px 0 rgba(0,0,0,0.4)!important;
             }
-            /* .box-shadow{
-                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.2),0 2px 20px 0 rgba(0,0,0,0.2)!important;
-            } */
             .bg-purple {
                 background: linear-gradient(to bottom, #FFB200, #FA5C34);
                 border: none;
@@ -111,15 +122,20 @@
             .nav-btm:hover{
                 color: #320047;
             }
-
+            /* responsive lg sizes and down */
+            @media (max-width: 1200px) {
+            .display-4 {
+                font-size: 2.5rem;
+            }  
+            }
             /* responsive md sizes and down */
             @media (max-width: 991.98px) {
             .mt-60 {
                 margin-top: 60px;
             }
             .display-4 {
-                font-size: 2.5rem;
-            }
+                font-size: 2rem;
+            } 
             .navbar-btm {
                 font-size: 1rem;
                 text-align: right;
@@ -132,10 +148,14 @@
                 background-image: url("img/astro-2.jpg");
             }
             #logo{
-                height: 60px;
-                width: 250px;
+                height: 50px;
+                width: 300px;
                 background-size: contain;
                 background-repeat: no-repeat;
+                top: 5px;
+            }
+            .nav-top{
+                font-size: 1.12rem;
             }
             .navbar-btm {
                 text-align: center;
@@ -153,13 +173,18 @@
             .h-sm-100{
                 height: 900px;
             }
+            #logo{
+                height: 60px;
+                width: 300px;
+                background-size: cover;
+                position: initial;
+            }
             .navbar-brand{
                 display: flex;
                 justify-content: center;
             }
             .nav-top{
                 color: #B400FF;
-                font-size: 1.5 rem;
             }
             .nav-top:hover{
                 color:#6C2799;
@@ -219,11 +244,11 @@
                 <div class="row">
                     <div class="col-12 col-md-6 mt-80 mt-lg-3">
                         <h1 class="mt-4 mt-lg-3 display-4">Easy Access to Retirement Dollars</h1>
-                        <ul class="mt-sm-4 ml-lg-5 mt-3 ml-4 mb-5 list-unstyled">
+                        <ul id="benefits" class="mt-sm-4 ml-lg-5 mt-3 ml-4 mb-5 list-unstyled">
                             <ul>
-                                <li class="lead text-left">Unlock retirement savings</li>
-                                <li class="lead text-left">Access to new investments like start-ups and cryptocurrency</li>
-                                <li class="lead text-left">Never lose the tax benefits</li>
+                                <li class="lead text-left pb-2">Unlock retirement savings</li>
+                                <li class="lead text-left pb-2">Access to new investments like real estate, start-ups, and cryptocurrency</li>
+                                <li class="lead text-left pb-2">Never lose the tax benefits</li>
                             </ul>
                         </ul>
                     </div>
