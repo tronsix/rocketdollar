@@ -1,0 +1,209 @@
+/* GENERAL STYLES */
+body {
+    font-family: 'Montserrat', sans-serif;
+   }
+.wht{
+    color: #fff;
+}
+h1{
+    font-family: 'Open Sans', sans-serif;
+}
+#benefits{
+    max-width: 450px;
+}
+.display-4{
+    font-weight: 400;
+}
+ul{
+    padding: 0;
+}
+input[type=checkbox], input[type=radio] {
+    height: 25px;
+    width: 25px;
+    margin-top: 0;
+}
+.btn {
+    font-size: 1.125rem;
+}
+/* CONTENT STYLES */
+.content {
+    z-index: 2;
+}
+.bg-gradient-main{
+    background: linear-gradient(to bottom right, #a32ad6, #350dff );
+    background-attachment: fixed;
+    opacity: 1;
+    position: absolute;
+    top: 0;
+    height: 105%;
+    z-index: -1;
+}
+.bg-img {
+    background-image: url("../img/astro-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    height: 105%;
+    z-index: -1;
+}
+#page-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    align-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+/* top nav */
+.nav-top{
+    color: #fff;
+    font-size: 1.5rem;
+}
+.nav-top:hover {
+    color: #320047;
+}
+#logo{
+    height: 60px;
+    width: 300px;
+    background-size: cover;
+    background-image: url("../img/rd-logo-long-wht.png");
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0px;
+}
+/* main content */
+.mt-60 {
+    margin-top: 60px;
+}
+.mt-90{
+    margin-top: 90px;
+}
+/* form */
+.purp-gradient{
+    background: linear-gradient(to bottom right, #a32ad6, #350dff);
+    opacity: .9;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4),0 2px 20px 0 rgba(0,0,0,0.4)!important;
+}
+.bg-purple {
+    background: linear-gradient(to bottom, #FFB200, #FA5C34);
+    border: none;
+    height: 45px;
+}
+.bg-purple:hover{
+    background: linear-gradient(to bottom,#22DDE0, #350DFF);
+    background-color: #320047; 
+}
+.card-width{
+    width: 75%;
+}
+.form-check{
+    text-align: center;
+}
+/* btm nav */
+.nav-btm:hover{
+    color: #320047;
+}
+
+/* RESPONSIVE STYLES */
+/* responsive lg sizes and down */
+@media (max-width: 1200px) {
+.display-4 {
+    font-size: 2.5rem;
+}  
+}
+
+
+/* responsive md sizes and down */
+@media (max-width: 991.98px) {
+    .display-4 {
+        font-size: 2rem;
+    } 
+    .navbar-btm {
+        font-size: 1rem;
+        text-align: right;
+    }
+    .form-check{
+        text-align: initial;
+        margin-left: 1rem;
+    }
+}
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    .card-width{
+        width: 100%;
+    }
+}
+
+/* responsive sm sizes and down */
+@media (max-width: 767.98px) {
+.bg-img {
+    background-image: url("../img/astro-2.jpg");
+}
+#logo{
+    height: 50px;
+    width: 300px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: 5px;
+}
+.nav-top{
+    font-size: 1.12rem;
+}
+.navbar-btm {
+    text-align: center;
+    font-size: .7rem;
+}
+.mt-90{
+    margin-top: 0px;
+}
+.card-width{
+    width: 75%;
+}
+}
+
+/* responsive xs sizes and down */
+@media (max-width: 575.98px) { 
+.bg-img {
+    background-image: url("../img/astro-1.jpg");
+}
+#page-wrapper{
+    min-height: 70vh;
+}
+.h-sm-100{
+    height: 900px;
+}
+#logo{
+    height: 60px;
+    width: 300px;
+    background-size: cover;
+    position: initial;
+}
+.navbar-brand{
+    display: flex;
+    justify-content: center;
+}
+.nav-top{
+    color: #B400FF;
+}
+.nav-top:hover{
+    color:#6C2799;
+}
+.navbar ul{
+    margin: 0 auto;
+}
+.navbar-btm {
+    display: none;
+}
+.fixed-top{
+    background-color: #00002B;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+}
+}

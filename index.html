@@ -8,6 +8,8 @@
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <!-- Custom CSS  -->
+        <link rel="stylesheet" href="css/styles.css">
 
         <title>Rocket Dollar</title>
 <!-- 
@@ -29,181 +31,10 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Open+Sans:300,400,700,800" rel="stylesheet">
         <!-- Font Awesome -->
         <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
-        
-        <style>
-            /* general */
-            .wht{
-                color: #fff;
-            }
-            h1{
-                font-family: 'Open Sans', sans-serif;
-            }
-            #benefits{
-                max-width: 450px;
-            }
-            .display-4{
-                font-weight: 400;
-            }
-            ul{
-                padding: 0;
-            }
-            /* body */
-            body {
-             font-family: 'Montserrat', sans-serif;
-            }
-            .content {
-                z-index: 2;
-            }
-            .bg-gradient-main{
-                background: linear-gradient(to bottom right, #a32ad6, #350dff );
-                background-attachment: fixed;
-                opacity: 1;
-                position: absolute;
-                top: 0;
-                height: 105%;
-                z-index: -1;
-            }
-            .bg-img {
-                background-image: url("img/astro-3.jpg");
-                background-size: cover;
-                background-repeat: no-repeat;
-                opacity: .5;
-                position: absolute;
-                top: 0;
-                height: 105%;
-                z-index: -1;
-            }
-            #page-wrapper {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                min-height: 80vh;
-                align-content: space-between;
-                flex-direction: row;
-                flex-wrap: wrap;
-                z-index: 1;
-            }
-            /* top nav */
-            .nav-top{
-                color: #fff;
-                font-size: 1.5rem;
-            }
-            .nav-top:hover {
-                color: #320047;
-            }
-            #logo{
-                height: 60px;
-                width: 300px;
-                background-size: cover;
-                background-image: url("img/rd-logo-long-wht.png");
-                background-repeat: no-repeat;
-                position: fixed;
-                top: 0px;
-            }
-            /* form */
-            .purp-gradient{
-                background: linear-gradient(to bottom right, #a32ad6, #350dff);
-                opacity: .9;
-                box-shadow: 0 2px 5px 0 rgba(0,0,0,0.4),0 2px 20px 0 rgba(0,0,0,0.4)!important;
-            }
-            .bg-purple {
-                background: linear-gradient(to bottom, #FFB200, #FA5C34);
-                border: none;
-                height: 45px;
-            }
-            .bg-purple:hover{
-                background: linear-gradient(to bottom,#22DDE0, #350DFF);
-                background-color: #320047; 
-            }
+        <!-- sharethis script -->
+        <script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5a81eb61d4d59e0012e898bc&product=inline-share-buttons' async='async'></script>
 
-            /* btm nav */
-            .nav-btm:hover{
-                color: #320047;
-            }
-            /* responsive lg sizes and down */
-            @media (max-width: 1200px) {
-            .display-4 {
-                font-size: 2.5rem;
-            }  
-            }
-            /* responsive md sizes and down */
-            @media (max-width: 991.98px) {
-            .mt-60 {
-                margin-top: 60px;
-            }
-            .display-4 {
-                font-size: 2rem;
-            } 
-            .navbar-btm {
-                font-size: 1rem;
-                text-align: right;
-            }
-            }
 
-            /* responsive sm sizes and down */
-            @media (max-width: 767.98px) {
-            .bg-img {
-                background-image: url("img/astro-2.jpg");
-            }
-            #logo{
-                height: 50px;
-                width: 300px;
-                background-size: contain;
-                background-repeat: no-repeat;
-                top: 5px;
-            }
-            .nav-top{
-                font-size: 1.12rem;
-            }
-            .navbar-btm {
-                text-align: center;
-                font-size: .7rem;
-            }
-            }
-            /* responsive xs sizes and down */
-            @media (max-width: 575.98px) { 
-            .bg-img {
-                background-image: url("img/astro-1.jpg");
-            }
-            #page-wrapper{
-                min-height: 70vh;
-            }
-            .h-sm-100{
-                height: 900px;
-            }
-            #logo{
-                height: 60px;
-                width: 300px;
-                background-size: cover;
-                position: initial;
-            }
-            .navbar-brand{
-                display: flex;
-                justify-content: center;
-            }
-            .nav-top{
-                color: #B400FF;
-            }
-            .nav-top:hover{
-                color:#6C2799;
-            }
-            .navbar ul{
-                margin: 0 auto;
-            }
-            .navbar-btm {
-                display: none;
-            }
-            .fixed-top{
-                background-color: #00002B;
-                position: fixed;
-                top: auto;
-                bottom: 0;
-                right: 0;
-                left: 0;
-                z-index: 1000;
-            }
-            }
-        </style>
     </head>
     <body class = "wht">
         <div class = "bg-gradient-main w-100 h-sm-100"></div>
@@ -240,9 +71,9 @@
         <div class = "content">
             <div  id="page-wrapper" class="container text-center">
                 <div class="row">
-                    <div class="col-12 col-md-6 mt-80 mt-lg-3">
-                        <h1 class="mt-4 mt-lg-3 display-4">Easy Access to Retirement Dollars</h1>
-                        <ul id="benefits" class="mt-sm-4 ml-lg-5 mt-3 ml-4 mb-5 list-unstyled">
+                    <div class="col-12 col-md-6 mt-60 ">
+                        <h1 class="mt-4 mt-lg-3 display-4">Easy Access to <br> 401(k) and IRA Dollars</h1>
+                        <ul id="benefits" class="mt-3 mt-sm-4 mb-5 ml-4 ml-lg-5 list-unstyled">
                             <ul>
                                 <li class="lead text-left pb-2">Unlock retirement savings</li>
                                 <li class="lead text-left pb-2">Access to new investments like real estate, start-ups, and cryptocurrency</li>
@@ -251,7 +82,7 @@
                         </ul>
                     </div>
                     <div class="col">
-                        <div class="card w-75 mx-auto mt-80 mt-lg-3">
+                        <div class="card mx-auto mt-90 card-width">
                             <div class="purp-gradient card-body rounded box-shadow">
                                 <form accept-charset="UTF-8" action="https://va406.infusionsoft.com/app/form/process/1d2b003c167ede54ffe54f6c537f1195" class="infusion-form" id="inf_form_1d2b003c167ede54ffe54f6c537f1195" method="POST">
                                     <input name="inf_form_xid" type="hidden" value="1d2b003c167ede54ffe54f6c537f1195" />
@@ -263,21 +94,21 @@
                                         <input type="email" class="form-control mb-3 infusion-field-input" id="inf_field_Email" name="inf_field_Email" placeholder="Email" aria-label="Email" aria-describedby="basic-addon2" required>
                                         <div class="infusion-field">
                                             <label class="d-block text-left" for="inf_option_Goal">Your Goal</label>
-                                            <div class="infusion-radio">
+                                            <div class="infusion-radio mt-3">
                                                 <div class="options-container row">
-                                                    <div class="form-check infusion-option col">
-                                                        <input class="form-check-input" id="inf_option_Goal_216" name="inf_option_Goal" type="radio" value="216" required>
-                                                        <label class="form-check-label" for="inf_option_Goal_216">Investing</label>
+                                                    <div class="form-check infusion-option col mb-3">
+                                                        <input class="form-check-input" id="inf_option_Goal_216" name="inf_option_Goal" type="radio" value="216">
+                                                        <label class="form-check-label ml-3" for="inf_option_Goal_216">Investing</label>
                                                     </div>
-                                                    <div class="form-check infusion-option col">
+                                                    <div class="form-check infusion-option col mb-3">
                                                         <input class="form-check-input" id="inf_option_Goal_218" name="inf_option_Goal" type="radio" value="218">
-                                                        <label class="form-check-label" for="inf_option_Goal_218">Funding</label>
+                                                        <label class="form-check-label ml-3" for="inf_option_Goal_218">Funding</label>
                                                     </div>
                                                 </div>
                                             </div>  
                                         </div>
                                         <div class="input-group-append infusion-submit">
-                                            <button class="btn bg-purple mx-auto mt-2 wht rounded w-100 infusion-recaptcha" id="recaptcha_1d2b003c167ede54ffe54f6c537f1195" type="sumbit">Get Early Access</button>
+                                            <button class="btn bg-purple mx-auto mt-2 wht rounded w-100" type="sumbit">Get Early Access</button>
                                         </div>  
                                     </div>
                                 </form>
@@ -298,7 +129,6 @@
                     </div>
                 </nav>
         </div>
-    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
@@ -308,4 +138,32 @@
     <script src="https://www.google.com/recaptcha/api.js?onload=onloadInfusionRecaptchaCallback&render=explicit" async="async" defer="defer"></script>
     <script type="text/javascript" src="https://va406.infusionsoft.com/app/timezone/timezoneInputJs?xid=1d2b003c167ede54ffe54f6c537f1195"></script>
     </body>
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '151504105513396');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=151504105513396&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114042014-1"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-114042014-1');
+    </script>
+    <!-- End Google Analytics -->
+
 </html>
